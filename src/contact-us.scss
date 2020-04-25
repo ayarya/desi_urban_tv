@@ -1,0 +1,289 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+//html{
+//  background:#3498db;
+//}
+
+//.contact-us-content h1 {
+////  position: relative;
+////  text-indent:30px;
+////  color: #000;
+////  font-size: 2.5rem;
+////  width: 100%;
+////  margin: 1.8em 0;
+////}
+////.contact-us-content h1:before {
+////  content: "";
+////  position: absolute;
+////  width: 317px;
+////  height: 2px;
+////  background: lightgrey;
+////  top: 60px;
+////  left:0;
+////}
+
+#feedback-page{
+  text-align:center;
+}
+
+#text-feedback{
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color:white;
+  text-align:center;
+}
+
+#form-main{
+  width:100%;
+  float:left;
+  display: flex;
+  justify-content: center;
+}
+
+#form-div {
+  background-color:#3c3c3c;
+  padding-left:35px;
+  padding-right:35px;
+  padding-top:35px;
+  padding-bottom:50px;
+  width: 450px;
+  border-radius: 25px;
+}
+
+
+.feedback-input {
+  opacity:0.9;
+  color:#0493bd;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  border: 3px solid #fbfbfb;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width:100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.feedback-input:focus{
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #3498db;
+  color: #3498db;
+  outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+  color:#30aed6;
+  border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#name:focus{
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 8px 5px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#email{
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#email:focus{
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#comment{
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+  background-color:white;
+}
+
+#button-blue{
+  font-family: 'Montserrat', Helvetica, Arial,  sans-serif;
+  float:left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor:pointer;
+  background-color: #3498db;
+  color:white;
+  font-size:24px;
+  padding-top:22px;
+  padding-bottom:22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#button-blue:hover{
+  background-color: rgba(0,0,0,0);
+  color: #0493bd;
+}
+
+.submit:hover {
+  color: #3498db;
+}
+
+.ease {
+  border-top:3px #3c3c3c solid;
+  width: 0px;
+  height: 76px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+  #form-div{
+
+    width: 90%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+//@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+//
+//*{
+//  margin: 0;
+//  padding: 0;
+//  box-sizing: border-box;
+//  outline: none;
+//  font-family: 'Josefin Sans', sans-serif;
+//}
+//
+//
+//
+//.wrapper{
+//  background-image: url("assets/background-pic-1.jpg");
+//  display: flex;
+//  //top: 50%;
+//  //left: 50%;
+//  //transform: translate(-50%,-50%);
+//  max-width: 350px;
+//  width: 100%;
+//  background: #fff;
+//  padding: 25px;
+//  border-radius: 25px;
+//  box-shadow: 4px 4px 2px rgba(254,236,164,1);
+//  margin-top: 25px;
+//  margin-bottom: 25px;
+//}
+//
+//.wrapper h2{
+//  text-align: center;
+//  margin-bottom: 20px;
+//  text-transform: uppercase;
+//  letter-spacing: 3px;
+//  color: #332902;
+//}
+//
+//.wrapper .input_field{
+//  margin-bottom: 10px;
+//}
+//
+//.wrapper .input_field input[type="text"],
+//.wrapper textarea{
+//  border: 1px solid #e0e0e0;
+//  width: 100%;
+//  padding: 10px;
+//}
+//
+//.wrapper textarea{
+//  resize: none;
+//  height: 80px;
+//}
+//
+//.wrapper .btn input[type="submit"]{
+//  border: 0px;
+//  margin-top: 15px;
+//  padding: 10px;
+//  text-align: center;
+//  width: 100%;
+//  background: #fece0c;
+//  color: #332902;
+//  text-transform: uppercase;
+//  letter-spacing: 5px;
+//  font-weight: bold;
+//  border-radius: 5px;
+//  cursor: pointer;
+//}
+//
+//#error_message{
+//  margin-bottom: 20px;
+//  background: #fe8b8e;
+//  padding: 0px;
+//  text-align: center;
+//  font-size: 14px;
+//  transition: all 0.5s ease;
+//}
+//
+//.contact-us-wrapper{
+//  display: flex;
+//}
+//
+//.contact-us-grid{
+//  min-height: 50vh;
+//}
+
+//.grid-container3 {
+//  max-width: 1170px;
+//  display: grid;
+//  grid-template-columns: repeat(2,minmax(400px,1fr));
+//  grid-gap: 35px;
+//  margin: 35px auto;
+//  padding: 0 15px;
+//}
