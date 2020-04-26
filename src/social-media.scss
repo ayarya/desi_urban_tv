@@ -1,0 +1,261 @@
+
+.video-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  margin-top: 20px;
+  border-radius: 20px;
+  perspective: 1px;
+}
+
+@media only screen and (min-width: 980px) {
+
+  .video-responsive{
+    margin-bottom: -290px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+
+  .video-responsive{
+    margin-bottom: -380px;
+  }
+}
+//.video-responsive iframe{
+//  left:0;
+//  top:0;
+//  height:50%;
+//  width:50%;
+//  position:absolute;
+//  left: 23vw;
+//  padding-top: 25px;
+//}
+
+@media only screen and (min-width: 320px) {
+
+  .video-responsive iframe{
+    //left:0;
+    top:0;
+    border: black solid 1px;
+    height:100%;
+    width:100%;
+    position:absolute;
+    border-radius: 10px;
+    perspective: 1px;
+
+  }
+}
+
+@media only screen and (min-width: 980px) {
+
+  .video-responsive iframe{
+    top:0;
+    border: black solid 1px;
+    height:50%;
+    width:50%;
+    position:absolute;
+    left: 25vw;
+  }
+}
+
+.img-border{
+  border: white solid 5px;
+}
+
+
+
+
+$duration : 450ms;
+$tileWidth : 250px;
+$tileHeight : ($tileWidth / (16/9));
+$iconSize : 50px;
+$growFactor : 1.2;
+$moveLeft : -($tileWidth * ($growFactor - 1) / 2);
+$moveRight : $tileWidth * ($growFactor - 1);
+
+
+
+//@media only screen and (min-width: 320px) {
+//
+//  .netflix-row {
+//    top:35vh;
+//    overflow: scroll;
+//    width: 100%;
+//    position: absolute;
+//  }
+//}
+//
+//@media (min-width: 1024px) and (min-height: 750px) {
+//  .netflix-row {
+//    top:40vh;
+//    overflow: scroll;
+//    width: 100%;
+//    position: absolute;
+//  }
+//}
+//@media (min-width: 1024px) and (min-height: 1300px) {
+//  .netflix-row {
+//    top:25vh;
+//    overflow: scroll;
+//    width: 100%;
+//    position: absolute;
+//  }
+//}
+//
+//@media (min-width: 520px) and (min-height: 320px) {
+//  .netflix-row {
+//    top:120vh;
+//    overflow: scroll;
+//    width: 100%;
+//    position: absolute;
+//  }
+//}
+//
+//@media only screen and (min-width: 1200px) {
+//
+//
+//}
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.netflix-row {
+ // top:100vh;
+ // overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+}
+.youtube-container{
+  position: relative;
+  // overflow: hidden;
+}
+
+
+
+
+.netflix-row--inner {
+  overflow-x:scroll ;
+  overflow-y: hidden;
+  transition: $duration transform;
+  font-size: 0;
+  white-space: nowrap;
+  //margin: ($tileHeight / 5) 0;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}// Account for OS X scroll bar
+
+.netflix-row--item{
+  display: inline-block;
+  background: gray;
+  width: $tileWidth;
+  height: $tileHeight;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: $duration alll;
+  transform-origin: left center;
+  border-radius: 5px;
+  perspective: 1px;
+  border: black solid 2px;
+}
+
+// Last Child Item
+.netflix-row--item:last-child {
+  transform-origin: right center;
+}
+
+/* HOVER EFFECT */
+
+.netflix-row {
+  opacity: 1;
+}
+
+.netflix-row--inner:hover{
+  transform: translate3d($moveLeft, 0, 0);
+  border-radius: 10px;
+  perspective: 1px;
+
+}
+
+.netflix-row--inner:hover .netflix-row--item {
+  opacity: 3;
+  border-radius: 10px;
+  perspective: 1px;
+  &:hover {
+    opacity: 3;
+    border-radius: 10px;
+    perspective: 1px;
+    opacity: 1;
+    transform: scale($growFactor);
+  }
+}
+
+.netflix-row--item:hover ~ .netflix-row--item{
+  opacity: 3;
+  border-radius: 10px;
+  perspective: 1px;
+  transform: translate3d($moveRight, 0, 0);
+}
+
+
+
+
+
+
+
+.grid-container3 {
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(150px, 1fr));
+  margin: 35px auto;
+  padding: 0 15px;
+  grid-template-columns: repeat(auto-fit,minmax(275px,1fr));
+  grid-template-rows: repeat(3,minmax(180px,0.5fr));
+  grid-gap: 5px;
+}
+
+.instagram-grid {
+  grid-template-areas:
+          'img1 img2 img4 img7'
+          'img1 img2 img5 img8'
+          'img1 img3 img6 img8'    ;
+}
+.instagram-grid .grid-item:first-child {
+  grid-area: img1;
+}
+.instagram-grid .grid-item:nth-child(2) {
+  grid-area: img2 ;
+}
+.instagram-grid .grid-item:nth-child(3) {
+  grid-area: img4 ;
+}
+.instagram-grid .grid-item:nth-child(4) {
+  grid-area: img7 ;
+}
+.instagram-grid .grid-item:nth-child(5) {
+  grid-area: img1;
+}
+.instagram-grid .grid-item:nth-child(6) {
+  grid-area: img2 ;
+}
+.instagram-grid .grid-item:nth-child(7) {
+  grid-area: img5 ;
+}
+.instagram-grid .grid-item:nth-child(8) {
+  grid-area: img8 ;
+}
+.instagram-grid .grid-item:nth-child(9) {
+  grid-area: img1;
+}
+.instagram-grid .grid-item:nth-child(10) {
+  grid-area: img3 ;
+}
+.instagram-grid .grid-item:nth-child(11) {
+  grid-area: img6 ;
+}
+.instagram-grid .grid-item:nth-child(12) {
+  grid-area: img8 ;
+}
+section {
+  display: block;
+}

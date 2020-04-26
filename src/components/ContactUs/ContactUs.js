@@ -10,7 +10,7 @@ export default class ContactUs extends Component {
 
 		return (
 
-				<div id="main-content" className="welcome">
+				<div id="main-content" className="contact-us-welcome">
 					<main className="content ">
 						<section >
 										<div className="grid-container1 contact-us-grid">

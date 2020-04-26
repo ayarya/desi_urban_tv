@@ -95,11 +95,11 @@ export default class Home extends Component {
 							{/*/!*<a href="#"><span>B</span><span>u</span><span>y</span></a>*!/*/}
 							{/*/!*</div>*!/*/}
 
-							{/*/!*<div className="social-rectangles">*!/*/}
-							{/*/!*<a href="#" className="btn instagram">*!/*/}
-							{/*/!*<span className="label">Instagram</span>*!/*/}
-							{/*/!*</a>*!/*/}
-							{/*/!*</div>*!/*/}
+							{/*<div className="social-rectangles">*/}
+							{/*<a href="#" className="btn instagram">*/}
+							{/*<span className="label">Instagram</span>*/}
+							{/*</a>*/}
+							{/*</div>*/}
 							{/*</div>*/}
 							{/*<h2>DownLoad</h2>*/}
 							{/*</div>*/}
@@ -114,7 +114,7 @@ export default class Home extends Component {
 							{/*data-src="https://images.unsplash.com/photo-1532072485171-c53a112f8cd0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=420&amp;h=420&amp;q=80"*/}
 							{/*src={ImmiBook1}*/}
 							{/*alt=""/>*/}
-							{/*/!*<div className="img-overlay">*!/*/}
+							{/*<div className="img-overlay">*/}
 							{/*/!*<a href="#"><span>B</span><span>u</span><span>y</span></a>*!/*/}
 							{/*/!*</div>*!/*/}
 							{/*</div>*/}
